@@ -5,13 +5,13 @@
     --foreground-sub-color: #fff;
     --body-background-color: rgba(33, 36, 40, 1);
     --border-color: #000000;
-    
+
 }
 .dark .sidebar__header{
     background: #000000;
 }
 .dark .bg-dark_primary_bg{
-    
+
     background-color: rgba(33, 36, 40, 1);
 }
 
@@ -48,7 +48,7 @@
 
 /* dark hero section css */
 .dark .hero__section--bg{
-    background: url(../img/hero/hero-bg-img-dark.png);
+    background: url(../img/hero/home2-hero-bg-dark.png);
     border-bottom: 1px solid var(--bg-black-color);
 }
 
@@ -187,6 +187,3 @@
     background-size: cover;
     border-top: 1px solid var(--bg-black-color);
 }
-
-
-

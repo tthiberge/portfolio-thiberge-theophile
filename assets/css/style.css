@@ -6,7 +6,7 @@
   Version: 1.0.0
 
   ----------------------------
-  [Table of contents CSS] 
+  [Table of contents CSS]
   ----------------------------
 
     1. Base CSS
@@ -15,12 +15,12 @@
     4. About css
     5. Blog css
     6. brand css
-    7. Contact page css 
+    7. Contact page css
     8. Footer css
     9. home three css
     10. Newsletter css
     11. Portfolio css
-    12. preloader css 
+    12. preloader css
     13. Resume css
     14. services css
     15. Skills css
@@ -1732,8 +1732,8 @@ body.overlay__active::before,
   margin-top: 3rem;
 }
 
-/* 
-    offcanvas Menu css 
+/*
+    offcanvas Menu css
   */
 .offcanvas__menu {
   overflow-y: auto;
@@ -1765,8 +1765,8 @@ body.overlay__active::before,
   color: var(--primary-color);
 }
 
-/* 
-    offcanvas Sub Menu 
+/*
+    offcanvas Sub Menu
 */
 .offcanvas__sub_menu {
   display: none;
@@ -2287,8 +2287,8 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-/* 
-    12. preloader css 
+/*
+    12. preloader css
 */
 #preloader {
   position: fixed;
@@ -2738,12 +2738,13 @@ input[type=number]::-webkit-outer-spin-button {
 
 .projects__budget {
   position: absolute;
-  bottom: 0;
+  bottom: -30px;
   right: 0;
   background: var(--body-background-color);
   padding: 1rem 3rem 1rem 1.5rem;
   border-radius: 4rem;
   gap: 1.2rem;
+
 }
 
 @media only screen and (min-width: 992px) {
@@ -2755,6 +2756,7 @@ input[type=number]::-webkit-outer-spin-button {
 @media only screen and (max-width: 479px) {
   .projects__budget {
     right: 20px;
+    bottom: -15px;
   }
 }
 
@@ -2827,6 +2829,10 @@ input[type=number]::-webkit-outer-spin-button {
 .logo__positioning.two {
   right: 0;
   top: 20rem;
+}
+
+.logo__positioning img {
+  border-radius: 5px;
 }
 
 @media only screen and (min-width: 1366px) {
@@ -4050,8 +4056,8 @@ blockquote::before {
   }
 }
 
-/* 
-    7. Contact page css 
+/*
+    7. Contact page css
 */
 .contact__section--bg {
   background: url(../img/other/contact-bg.png);
@@ -4291,8 +4297,8 @@ blockquote::before {
   border: 1px solid var(--secondary-color) !important;
 }
 
-/* 
-    11. Portfolio css 
+/*
+    11. Portfolio css
 */
 .portfolio__section--bg {
   background: var(--bg-offwhite-color);
@@ -5003,7 +5009,7 @@ blockquote::before {
 }
 
 /*
-    4. About css 
+    4. About css
 */
 @media only screen and (max-width: 991px) {
   .inner__page--content {
@@ -5438,6 +5444,8 @@ blockquote::before {
   padding: 2.5rem 2rem;
   min-height: 103px;
   border-bottom: 1px solid #DDDDDD;
+  align-items: center;
+  display: flex;
 }
 
 .brand__logo--items:last-child {
@@ -5467,6 +5475,7 @@ blockquote::before {
 .brand__logo--img {
   margin: 0 auto;
   opacity: 0.7;
+  max-height: 50px;
 }
 
 .brand__logo--img:hover {
