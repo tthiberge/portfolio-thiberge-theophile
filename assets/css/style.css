@@ -2744,7 +2744,7 @@ input[type=number]::-webkit-outer-spin-button {
 .social__share--link {
   width: 3rem;
   height: 3rem;
-  border: 1px solid var(--secondary-color);
+  /* border: 1px solid var(--hover-color); */
   color: var(--secondary-color);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2755,12 +2755,14 @@ input[type=number]::-webkit-outer-spin-button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  border-radius: 50%;
+  /* border-radius: 50%; */
 }
 
 .social__share--link:hover {
-  background: var(--secondary-color);
+  /* background: var(--hover-color); */
   color: var(--text-white-color);
+  transform: scale(1.4);
+  -webkit-transform: scale(1.4);
 }
 
 .projects__budget {
