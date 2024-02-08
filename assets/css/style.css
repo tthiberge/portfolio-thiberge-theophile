@@ -5817,16 +5817,25 @@ blockquote::before {
   width: 75%;
 }
 
+
+.skills__field.width_70::after {
+  width: 70%;
+}
+
+.skills__field.width_80::after {
+  width: 80%;
+}
+
+.skills__field.width_85::after {
+  width: 85%;
+}
+
 .skills__field.width_90::after {
   width: 90%;
 }
 
 .skills__field.width_100::after {
   width: 100%;
-}
-
-.skills__field.width_70::after {
-  width: 70%;
 }
 
 .skills__text {
@@ -5862,15 +5871,31 @@ blockquote::before {
 }
 
 .skills__count.width_60 {
-  left: 58%;
+  left: 56%;
+}
+
+.skills__count.width_70 {
+  left: 67%;
 }
 
 .skills__count.width_75 {
   left: 72%;
 }
 
+.skills__count.width_80 {
+  left: 76%;
+}
+
+.skills__count.width_85 {
+  left: 81%;
+}
+
 .skills__count.width_90 {
   left: 85%;
+}
+
+.skills__count.width_100 {
+  left: 96%;
 }
 
 @media only screen and (min-width: 480px) {
@@ -5879,19 +5904,12 @@ blockquote::before {
   }
 }
 
-.skills__count.width_100 {
-  left: 86%;
-}
-
 @media only screen and (min-width: 480px) {
   .skills__count.width_100 {
-    left: 90%;
+    left: 95%;
   }
 }
 
-.skills__count.width_70 {
-  left: 67%;
-}
 
 .skills__count::before {
   position: absolute;
