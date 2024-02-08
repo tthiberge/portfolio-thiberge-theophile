@@ -2523,6 +2523,12 @@ input[type=number]::-webkit-outer-spin-button {
   display: none;
 }
 
+.hero__thumbnail--media.light_img {
+
+  border: solid white 4px;
+  border-radius: 10px;
+}
+
 .hero__content {
   width: calc(100% - 30rem);
   padding-left: 4rem;

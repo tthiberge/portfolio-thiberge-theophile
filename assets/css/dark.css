@@ -60,6 +60,9 @@
 }
 .dark .hero__thumbnail--media.dark_img{
     display: block;
+    border: solid white 4px;
+    border-radius: 10px;
+
 }
 .dark .main__logo--img.logo_light{
     display: none;
