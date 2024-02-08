@@ -4763,6 +4763,7 @@ blockquote::before {
 @media only screen and (min-width: 1366px) {
   .services__card {
     padding: 5rem 4rem 4rem;
+    min-height: 490px;
   }
 }
 
