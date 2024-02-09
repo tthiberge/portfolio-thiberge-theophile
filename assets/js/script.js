@@ -8,24 +8,6 @@
 "use strict";
 
 
-const preLoader = function () {
-  let preloaderWrapper = document.getElementById("preloader");
-  window.onload = () => {
-    let isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test( navigator.userAgent) ? true : false;
-    if (!isMobile) {
-      setTimeout(function () {
-        preloaderWrapper.classList.add("preloaded");
-      }, 300);
-      setTimeout(function () {
-        preloaderWrapper.remove();
-      }, 1000);
-    } else {
-      preloaderWrapper.remove();
-    }    
-  };
-};
-preLoader();
-
 // getSiblings
 var getSiblings = function (elem) {
   const siblings = [];
@@ -170,7 +152,7 @@ function handleBodyClick(evt) {
       toggleNavButton.parentElement.classList.remove("menu--visible");
     }
   }
-} 
+}
 
 
 /** -------- Isotope activation js ----------- **/
@@ -232,7 +214,7 @@ if(isotopeGrid){
       });
     }
   });
-  
+
 
 }
 
@@ -442,45 +424,3 @@ const categoryMobileMenu = function () {
   }
 };
 categoryMobileMenu();
-
-// Newsletter popup
-const newsletterPopup = function () {
-  let newsletterWrapper = document.querySelector(".newsletter__popup"),
-    newsletterCloseButton = document.querySelector(
-      ".newsletter__popup--close__btn"
-    ),
-    dontShowPopup = document.querySelector("#newsletter__dont--show"),
-    popuDontShowMode = localStorage.getItem("newsletter__show");
-
-  if (newsletterWrapper && popuDontShowMode == null) {
-    window.addEventListener("load", (event) => {
-      setTimeout(function () {
-        document.body.classList.add("overlay__active");
-        newsletterWrapper.classList.add("newsletter__show");
-
-        document.addEventListener("click", function (event) {
-          if (!event.target.closest(".newsletter__popup--inner")) {
-            document.body.classList.remove("overlay__active");
-            newsletterWrapper.classList.remove("newsletter__show");
-          }
-        });
-
-        newsletterCloseButton.addEventListener("click", function () {
-          document.body.classList.remove("overlay__active");
-          newsletterWrapper.classList.remove("newsletter__show");
-        });
-
-        dontShowPopup.addEventListener("click", function () {
-          if (dontShowPopup.checked) {
-            localStorage.setItem("newsletter__show", true);
-          } else {
-            localStorage.removeItem("newsletter__show");
-          }
-        });
-      }, 3000);
-    });
-  }
-};
-newsletterPopup();
-
-
